@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Power Play: 10 Steps To Become A Drummer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Barlow:wght@400;600&display=swap">
+<style>
+:root{--bg:#000;--ink:#f4f4f0;--dim:#9a9aa8;--panel:#0d0d14;--line:#26263a;--hh:#00f0ff;--sn:#ff2bd6;--bd:#ffe600;--tm:#7dff3a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:#000;color:var(--ink);font:400 17px/1.55 Barlow,system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+h1,h2{font-family:Bungee,Impact,sans-serif;font-weight:400;margin:0}
+h1{font-size:2rem;color:var(--sn);text-shadow:0 0 18px var(--sn)}
+.top{display:flex;align-items:center;gap:16px;margin:0 0 14px}
+h1.logo{margin:0;line-height:0;flex:none}
+h1.logo img{display:block;width:96px;height:96px;filter:drop-shadow(0 0 12px rgba(255,43,214,.45))}
+.sub{color:var(--dim);margin:0}
+nav{position:relative;display:flex;gap:6px;overflow-x:auto;padding:10px 6px 20px}
+nav button{flex:none;width:54px;height:54px;border:0;background:none;padding:0;color:var(--dim);font:600 15px Barlow,sans-serif;cursor:pointer;position:relative}
+nav button svg{display:block;width:100%;height:100%;overflow:visible;transition:filter .2s}
+nav button .o{fill:#2e2e44;stroke:#2e2e44;stroke-width:11;stroke-linejoin:round;transition:fill .2s,stroke .2s}
+nav button .t{fill:#12121c;stroke:#12121c;stroke-width:7;stroke-linejoin:round}
+nav button .n{position:absolute;left:46%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+nav button.on .o{fill:#035a0c;stroke:#035a0c}
+nav button.on .t{fill:url(#navg);stroke:url(#navg)}
+nav button.on svg{filter:drop-shadow(0 0 7px rgba(57,255,20,.75))}
+nav button.on .n{color:#031a05}
+nav button.on svg,nav button.on .n{visibility:hidden}
+#mk{position:absolute;top:4px;left:0;width:66px;height:66px;z-index:2;cursor:pointer;transition:left .4s cubic-bezier(.3,.8,.3,1)}
+#mk img{display:block;width:100%;height:100%;filter:drop-shadow(0 0 9px rgba(57,255,20,.6))}
+#mnum{position:absolute;left:48.5%;top:50%;transform:translate(-50%,-50%);font:800 17px/1 Barlow,sans-serif;color:#031a05;text-shadow:0 0 3px rgba(200,255,140,.8);pointer-events:none}
+nav button.beat::after{z-index:3}
+nav button.beat::after{content:"";position:absolute;left:50%;margin-left:-4.5px;bottom:-16px;width:9px;height:9px;border-radius:50%;background:var(--bd);box-shadow:0 0 8px var(--bd)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.stepno{color:var(--sn);text-shadow:0 0 14px var(--sn)}
+h2{font-size:1.5rem;color:var(--hh);margin-bottom:10px}
+.card p{max-width:62ch;margin:0 0 12px}
+.card ul{max-width:62ch;padding-left:20px}
+b{color:var(--bd);font-weight:600}
+button.cta{background:var(--bd);color:#000;border:0;border-radius:10px;padding:12px 20px;font:600 17px Barlow,sans-serif;cursor:pointer;box-shadow:0 0 16px rgba(255,230,0,.5)}
+button.ghost{background:none;color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:10px 16px;font:600 16px Barlow,sans-serif;cursor:pointer}
+button.ghost.on{border-color:var(--sn);color:var(--sn)}
+button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+svg.stv{display:block;width:100%;max-width:760px;height:auto;margin:14px auto}
+.checks label{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:10px;cursor:pointer;margin:8px 0;max-width:62ch}
+.checks input{width:24px;height:24px;flex:none;accent-color:var(--tm)}
+.checks label:has(input:checked){border-color:var(--tm);color:var(--tm)}
+.tag{display:block;font-size:13px;font-weight:400;color:var(--dim)}
+.styles{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.sty{text-align:left;background:#12121c;border:2px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);cursor:pointer;font:400 16px Barlow,sans-serif}
+.sty span{display:block;color:var(--dim);font-size:14px}
+.sty.on{border-color:var(--hh);box-shadow:0 0 14px var(--hh)}
+.sty-ex{margin-top:14px}
+h3{font:400 1.05rem Bungee,Impact,sans-serif;color:var(--tm);margin:20px 0 6px}
+.row>span{position:sticky;left:0;z-index:1;background:var(--panel)}
+#landing{display:none;text-align:center}
+body.home #landing{display:block}
+body.home .wrap{min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+body.home .top,body.home #nav,body.home .legend,body.home #step,body.home #player,body.home #pager{display:none!important}
+#landing .hero{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:0 0 28px rgba(255,43,214,.28)}
+button.start{margin:24px auto 8px;display:inline-flex;align-items:center;gap:12px;padding:16px 42px;border:0;border-radius:999px;background:linear-gradient(180deg,#7cf52e,#14c80c 55%,#046a0e);color:#031a05;font:700 26px Barlow,sans-serif;cursor:pointer;box-shadow:0 0 24px rgba(57,255,20,.55)}
+button.start svg{width:26px;height:26px;display:block}
+h1.logo{cursor:pointer}
+.legend{margin:0 0 14px 6px;font-size:13px;color:var(--dim)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--bd);box-shadow:0 0 8px var(--bd);margin-right:7px}
+.foot{margin:28px 0 0;text-align:center;font-size:13px;color:var(--dim)}
+.pager{display:flex;justify-content:space-between;margin-top:16px}
+.pager button:disabled{opacity:.35;cursor:default}
+svg.kit{width:100%;max-width:440px;display:block;margin:10px auto}
+#kitv svg.kit{touch-action:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+.hz{fill:transparent;stroke:none}
+.kit .cnt,.kit text{pointer-events:none}
+.kit .p{fill:#0a0a10;stroke-width:3;transition:fill .05s}
+.kit .hh{stroke:var(--hh)}.kit .sn{stroke:var(--sn)}.kit .bd{stroke:var(--bd)}.kit .tm{stroke:var(--tm)}.kit [data-k="tm1"]{stroke:#9dff3a}.kit [data-k="tm2"]{stroke:#b78cff}.kit [data-k="tm3"]{stroke:#4d9bff}.kit .cr{stroke:#ff8a1f}
+.kit .p.hit.hh{fill:var(--hh)}.kit .p.hit.sn{fill:var(--sn)}.kit .p.hit.bd{fill:var(--bd)}.kit .p.hit.tm{fill:var(--tm)}
+.kit .p.q{fill:#fff;stroke:#fff}
+.kit .cnt{fill:#000;font:400 22px Bungee,sans-serif;dominant-baseline:central;opacity:0}.kit .cnt.hit{opacity:1}
+.kit text{fill:var(--ink);font:600 13px Barlow,sans-serif;text-anchor:middle}
+.kit .st{stroke:#3a3a4c;stroke-width:3}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}
+.opts button.bad{border-color:#ff4b4b;color:#ff4b4b}.opts button.good{border-color:var(--tm);color:var(--tm)}
+#player{margin-top:18px;border:1px solid var(--sn);box-shadow:0 0 22px rgba(255,43,214,.25)}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.bar label{color:var(--dim);display:flex;gap:8px;align-items:center}
+input[type=range]{accent-color:var(--sn)}
+.scroll{overflow-x:auto}
+.grid{min-width:0}
+@media (max-width:700px){.grid{min-width:var(--gw,0)}}
+.row{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.row>span{width:84px;flex:none;font-weight:600}
+.cells{display:grid;flex:1;gap:5px}
+.cells button{height:38px;border-radius:7px;border:1px solid var(--line);background:#12121c;cursor:pointer;padding:0}
+.cells button.g4{border-color:#3a3a52}
+.cells button.has-stick{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;gap:1px}
+.cells button .stk{font-weight:800;font-size:14px}
+.cells button .cnt2{font-size:10px;opacity:.85}
+.cells button{height:44px}
+.cells button.locked{cursor:default;opacity:.4;filter:grayscale(.6)}
+.cells button.locked.on{opacity:.65;filter:grayscale(.35)}
+.cells button{color:#8a8aa8;font:400 15px Bungee,Barlow,sans-serif}
+.cells button.on{color:#000;background:var(--c);border-color:var(--c);box-shadow:0 0 10px var(--c)}
+.cells button.now{outline:2px solid #fff}
+.hint{color:var(--dim);font-size:15px;margin:8px 0 0}
+.badge{margin-left:auto;color:var(--tm);font:600 14px Barlow,sans-serif;border:1px solid var(--tm);border-radius:999px;padding:2px 12px;text-shadow:0 0 8px var(--tm);box-shadow:0 0 10px rgba(125,255,58,.35)}
+.clock{font:400 1.6rem Bungee,sans-serif;color:var(--tm)}
+[hidden]{display:none!important}
+@media (prefers-color-scheme:light){body{background:#000}}
+@media (max-width:520px){.wrap{padding:14px 12px 40px}.card{padding:16px}h1.logo img{width:76px;height:76px}.row>span{width:58px;font-size:14px}.cells{gap:3px}.cells button{height:34px;font-size:12px}}
+</style></head><body><div class="wrap">
+<section id="landing" aria-label="Welcome">
+<img class="hero" src="cover.jpg" alt="10 Steps To Become A Drummer: a simple step by step guide to fast track you onto the drum kit. By Peter Power.">
+<button class="start" id="start"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5 L20 12 L6 20.5 Z" fill="#031a05"/></svg><span>Start</span></button>
+</section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="navg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cf52e"/><stop offset=".45" stop-color="#14c80c"/><stop offset="1" stop-color="#046a0e"/></linearGradient></defs></svg>
+<nav id="nav" aria-label="Steps"></nav>
+<p class="legend"><i></i>Steps with a play-along grid</p>
+<div class="card" id="step"></div>
+<div class="card" id="player" hidden>
+  <div class="bar">
+    <button class="cta" id="go">Play</button>
+    <button class="ghost on" id="vg">Grid</button><button class="ghost" id="vk">Kit</button>
+    <button class="ghost on" id="r8">8th notes</button><button class="ghost" id="r16">16th notes</button>
+  </div>
+  <div class="bar"><label>Speed <input type="range" id="bpm" min="40" max="160" value="70"> <span id="bv">70</span> bpm</label>
+    <span class="badge" id="badge"></span><span class="clock" id="clock" hidden>30</span></div>
+  <p class="hint" id="swipe" hidden>Swipe the grid sideways to see all the beats.</p>
+  <div id="gridv"><div class="scroll" id="gscroll"><div class="grid" id="grid"></div></div>
+    <p class="hint" id="hint">Tap a tile to switch a beat on or off. Each row is one part of the kit.</p></div>
+  <div id="kitv" hidden></div>
+  <p class="hint">No sound on an iPhone? Turn the volume up and check the silent switch on the side.</p>
+</div>
+<div class="pager" id="pager"></div>
+<p class="foot">© 2026 Peter Power · Power Play</p>
+</div>
+<script>
+let ROWS=[["hh","Hi-hat"],["sn","Snare"],["bd","Bass drum"]];
+const NAMES={hh:"Hi-hat",sn:"Snare",bd:"Bass drum",tm1:"Small tom",tm2:"Middle tom",tm3:"Floor tom",cr:"Cymbal"};
+const COL={hh:"#00f0ff",sn:"#ff2bd6",bd:"#ffe600",tm1:"#9dff3a",tm2:"#b78cff",tm3:"#4d9bff",cr:"#ff8a1f"};
+const STY=[["r","Right-handed","The most common playing position","The hi-hat is on your left, the snare is in the middle and the bass drum pedal is under your right foot. Your right hand plays the hi-hat and crosses over your left hand, which plays the snare."],["l","Left-handed","A mirror-image kit","The whole kit is set up as a mirror image: the hi-hat is on your right and the bass drum pedal is under your left foot. Your left hand plays the hi-hat and crosses over your right hand, which plays the snare."],["o","Open-handed","A standard kit, with no crossing over","You sit at a standard kit, with the hi-hat on your left and the bass drum pedal under your right foot. You play the hi-hat with your left hand and the snare with your right, so your arms never cross. Some left-handed players choose this."]];
+function renderStyle(){const el=$("style");el.innerHTML="";const o=document.createElement("div");o.className="styles";
+STY.forEach(([k,n,sub])=>{const b=document.createElement("button");b.className="sty"+(mode==k?" on":"");b.setAttribute("aria-pressed",mode==k);b.innerHTML=`<b>${n}</b><span>${sub}</span>`;b.onclick=()=>{mode=k;try{localStorage.setItem("pp-mode",k)}catch(e){}hands();renderStyle()};o.appendChild(b)});
+el.appendChild(o);const c=STY.find(x=>x[0]==mode),h=HWS[mode];const d=document.createElement("div");d.className="sty-ex";
+d.innerHTML=`<p>${c[3]}</p><p>Hi-hat: <b>${h.hh[1]}</b> &nbsp; Snare: <b>${h.sn[1]}</b> &nbsp; Bass drum: <b>${h.bd[1]}</b></p>`+kit({labels:1});el.appendChild(d)}
+function lick(){A().resume();[[0,"sn"],[100,"sn"],[200,"tm1"],[300,"tm2"],[450,"bd"],[450,"cr"]].forEach(([d,k])=>setTimeout(()=>sound(k),d))}
+function kit(o){o=o||{};const L=o.labels,m=mode=="l",X=x=>m?440-x:x;const t=(x,y,s)=>L?`<text x="${X(x)}" y="${y}">${s}</text>`:"";
+const sh=`<line class="st" x1="70" y1="124" x2="70" y2="250"/><line class="st" x1="385" y1="90" x2="385" y2="250"/>
+<ellipse class="p hh" data-k="hh" cx="70" cy="116" rx="44" ry="8"/><ellipse class="p hh" data-k="hh" cx="70" cy="106" rx="44" ry="8"/>
+<ellipse class="p cr" data-k="cr" cx="385" cy="82" rx="46" ry="9"/>
+<ellipse class="p tm" data-k="tm1" cx="178" cy="98" rx="26" ry="9"/><ellipse class="p tm" data-k="tm2" cx="262" cy="98" rx="37" ry="13"/><ellipse class="p tm" data-k="tm3" cx="330" cy="162" rx="45" ry="17"/>
+<ellipse class="p sn" data-k="sn" cx="125" cy="158" rx="42" ry="16"/>
+<circle class="p bd" data-k="bd" cx="222" cy="188" r="64"/>${o.hit?`<ellipse class="hz" data-t="hh" cx="70" cy="111" rx="54" ry="24"/><ellipse class="hz" data-t="cr" cx="385" cy="82" rx="56" ry="22"/><ellipse class="hz" data-t="tm1" cx="178" cy="98" rx="38" ry="22"/><ellipse class="hz" data-t="tm2" cx="262" cy="98" rx="48" ry="24"/><ellipse class="hz" data-t="tm3" cx="330" cy="162" rx="52" ry="28"/><ellipse class="hz" data-t="sn" cx="125" cy="158" rx="50" ry="26"/>`:""}`;
+return `<svg class="kit" viewBox="0 0 440 270" role="img" aria-label="Drum kit${m?", set up left-handed":""}"><g${m?' transform="translate(440 0) scale(-1 1)"':""}>${sh}</g>
+${t(70,88,"Hi-hat")}${t(385,66,"Cymbal")}${t(180,72,"Small tom")}${t(262,72,"Middle tom")}${t(330,198,"Floor tom")}${t(125,194,"Snare")}${t(222,192,"Bass drum")}
+<text class="cnt" data-c="hh" x="${X(70)}" y="111">1</text><text class="cnt" data-c="sn" x="${X(125)}" y="159">1</text><text class="cnt" data-c="bd" x="${X(222)}" y="189">1</text></svg>`}
+
+function kitHTML(){return kit({hit:1})+'<p class="hint">Tap the drums to play them. You can use more than one finger.</p>'}
+function tapFlash(k){document.querySelectorAll(`#kitv [data-k="${k}"]`).forEach(e=>{e.style.fill=COL[k]||"#fff";clearTimeout(e._t);e._t=setTimeout(()=>{e.style.fill=""},150)})}
+
+const S=[
+{t:"Parts of the kit",b:`<p>A drum kit is a group of drums and cymbals, set up so you can reach every part sitting down.</p><ul><li>The <b>bass drum</b> is played with a foot pedal.</li><li>The <b>snare</b> sits between your knees and gives the crack.</li><li>The <b>small tom</b> and <b>middle tom</b> are the two smaller drums mounted above the bass drum, used mostly for fills.</li><li>The <b>floor tom</b> stands on its own legs on the opposite side of the kit from the snare. It has the lowest sound of the toms.</li><li>The <b>hi-hat</b> is a pair of cymbals on a stand. You play it with sticks and open and close it with a foot pedal.</li><li>The <b>cymbal</b> is used for big accents.</li></ul>`,vfirst:1,v:()=>kit({labels:1})},
+{t:"Name the kit",b:`<p>Test yourself. One part lights up white. Pick its name.</p><div id="quiz"></div>`,q:1},
+{t:"Your drumming style",b:`<p>Everyone sets up and plays the kit a little differently. Choose your style below. The rest of Power Play will show the right hands and feet for you, and the kit will match your set-up.</p><div id="style"></div>`,sty:1},
+{t:"Your 1st beat - 1/4 notes (crotchets)",b:`<p>The basic rock beat has three parts, played together over one bar of four beats:</p><ul><li><b>Hi-hat</b> on every beat: 1, 2, 3, 4 (<span class="hw" data-h="hh"></span>)</li><li><b>Bass drum</b> on beats 1 and 3 (<span class="hw" data-h="bd"></span>)</li><li><b>Snare</b> on beats 2 and 4 (<span class="hw" data-h="sn"></span>)</li></ul><p>Press Let's play, then Play, and tap along on your knees or a practice pad. The beat repeats until you press Stop. Count out loud, and start slowly. The hands and feet shown here match the style you chose in Step 3. Go back to Step 3 to change it.</p>`,p:{ro:1,res:4,bpm:60,hh:[0,4,8,12],bd:[0,8],sn:[4,12]}},
+{t:"Your 2nd beat - 8th notes (quavers)",b:`<p>Now play the hi-hat twice as often: <b>8th notes</b>. Count "1 and 2 and 3 and 4 and". The bass drum and snare stay exactly where they were.</p>`,p:{ro:1,res:8,bpm:60,hh:[0,2,4,6,8,10,12,14],bd:[0,8],sn:[4,12]}},
+{t:"Alternate sticking",b:`<p>This fixed pattern shows <b>alternate sticking</b> on the hi-hat. Both hands share it, taking turns on every 16th note, starting with your lead hand (R for right-handed players, L for left-handed and open-handed players). The lead hand always lands on the beat, so on beats 2 and 4 it drops down to play the snare, and the other hand carries on with the hi-hat on the "e". This pattern is fixed, so just follow along.</p>`,p:{ro:1,res:16,bpm:60,stick:"hh",hh:[0,1,2,3,5,6,7,8,9,10,11,13,14,15],sn:[4,12],bd:[0,8]}},
+{t:"Drum Kit Editor",b:`<p>This editor lets you choose any note on the grid. Choose <b>8th or 16th notes</b> on the hi-hats first, then add the snare and bass drum wherever you like.</p>`,p:{res:16,bpm:60,hh:[0,2,4,6,8,10,12,14],sn:[4,12],bd:[0,2,8,10]}},
+{t:"Small drum fills",b:`<p>A fill breaks up the beat, usually in the last beat or two of a bar, before a new section starts. Beats 1 to 3 below play a steady groove and are locked. Beat 4 (4, e, &, a) is yours: use the cymbal, small tom, middle tom and floor tom to write your own fill.</p>`,p:{res:16,bpm:60,rows:["cr","hh","tm1","tm2","sn","tm3","bd"],lockBefore:12,cols:[0,2,4,6,8,10,12,13,14,15],colLabels:["1","&","2","&","3","&","4","e","&","a"],hh:[0,2,4,6,8,10],bd:[0,8],sn:[4]}},
+{t:"Notation on the stave",b:`<p>If you want to take this further, you can learn to read drum music. This is a brief introduction.</p><p>Drum music is written on a <b>stave</b>: five lines that you read from left to right, split into bars. Each part of the kit has its own place on the stave. The drums are round notes on or between the lines, with the bass drum at the bottom. Cymbals are written as an x: the ride on the top line, the hi-hat just above it, and the crash on a small extra line above that.</p><p>Every bar is counted in beats: 1, 2, 3, 4. In the picture, each pair of notes lands on one beat, and the colours match the kit and the grids.</p>`,v:()=>`<svg class="stv" viewBox="0 0 640 400" role="img" aria-label="Drum notation on a stave in 4/4. Beat 1: small tom and bass drum. Beat 2: ride cymbal and floor tom. Beat 3: hi-hat and snare drum. Beat 4: crash cymbal and middle tom."><line x1="20" y1="160" x2="620" y2="160" stroke="#6f6f88" stroke-width="2"/><line x1="20" y1="185" x2="620" y2="185" stroke="#6f6f88" stroke-width="2"/><line x1="20" y1="210" x2="620" y2="210" stroke="#6f6f88" stroke-width="2"/><line x1="20" y1="235" x2="620" y2="235" stroke="#6f6f88" stroke-width="2"/><line x1="20" y1="260" x2="620" y2="260" stroke="#6f6f88" stroke-width="2"/><line x1="620" y1="160" x2="620" y2="260" stroke="#6f6f88" stroke-width="3"/><rect x="42" y="185" width="7" height="50" fill="#cfcfe0"/><rect x="57" y="185" width="7" height="50" fill="#cfcfe0"/><text x="102" y="210" font-family="Georgia, serif" font-weight="700" font-size="56" fill="#cfcfe0" text-anchor="middle">4</text><text x="102" y="260" font-family="Georgia, serif" font-weight="700" font-size="56" fill="#cfcfe0" text-anchor="middle">4</text><line x1="529" y1="135" x2="561" y2="135" stroke="#6f6f88" stroke-width="2"/><line x1="209" y1="172.5" x2="209" y2="117.5" stroke="#9dff3a" stroke-width="3"/><ellipse cx="200" cy="172.5" rx="10" ry="7.5" fill="#9dff3a" transform="rotate(-20 200 172.5)"/><line x1="209" y1="70" x2="209" y2="112.5" stroke="#9dff3a" stroke-width="2" opacity=".75"/><text x="200" y="34" fill="#9dff3a" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Small</text><text x="200" y="60" fill="#9dff3a" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Tom</text><line x1="324" y1="160" x2="324" y2="105" stroke="#ff6b6b" stroke-width="3"/><path d="M307 152 L323 168 M307 168 L323 152" stroke="#ff6b6b" stroke-width="3.5" stroke-linecap="round" fill="none"/><line x1="324" y1="70" x2="324" y2="100" stroke="#ff6b6b" stroke-width="2" opacity=".75"/><text x="315" y="34" fill="#ff6b6b" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Ride</text><text x="315" y="60" fill="#ff6b6b" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Cymbal</text><line x1="439" y1="147.5" x2="439" y2="92.5" stroke="#00f0ff" stroke-width="3"/><path d="M422 139.5 L438 155.5 M422 155.5 L438 139.5" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" fill="none"/><line x1="439" y1="70" x2="439" y2="87.5" stroke="#00f0ff" stroke-width="2" opacity=".75"/><text x="430" y="60" fill="#00f0ff" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Hi-hat</text><line x1="554" y1="135" x2="554" y2="80" stroke="#ff8a1f" stroke-width="3"/><path d="M537 127 L553 143 M537 143 L553 127" stroke="#ff8a1f" stroke-width="3.5" stroke-linecap="round" fill="none"/><line x1="554" y1="70" x2="554" y2="75" stroke="#ff8a1f" stroke-width="2" opacity=".75"/><text x="545" y="34" fill="#ff8a1f" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Crash</text><text x="545" y="60" fill="#ff8a1f" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Cymbal</text><line x1="191" y1="247.5" x2="191" y2="302.5" stroke="#ffe600" stroke-width="3"/><ellipse cx="200" cy="247.5" rx="10" ry="7.5" fill="#ffe600" transform="rotate(-20 200 247.5)"/><line x1="191" y1="307.5" x2="191" y2="330" stroke="#ffe600" stroke-width="2" opacity=".75"/><text x="200" y="354" fill="#ffe600" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Bass</text><text x="200" y="380" fill="#ffe600" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Drum</text><line x1="306" y1="222.5" x2="306" y2="277.5" stroke="#4d9bff" stroke-width="3"/><ellipse cx="315" cy="222.5" rx="10" ry="7.5" fill="#4d9bff" transform="rotate(-20 315 222.5)"/><line x1="306" y1="282.5" x2="306" y2="330" stroke="#4d9bff" stroke-width="2" opacity=".75"/><text x="315" y="354" fill="#4d9bff" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Floor</text><text x="315" y="380" fill="#4d9bff" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Tom</text><line x1="421" y1="197.5" x2="421" y2="252.5" stroke="#ff2bd6" stroke-width="3"/><ellipse cx="430" cy="197.5" rx="10" ry="7.5" fill="#ff2bd6" transform="rotate(-20 430 197.5)"/><line x1="421" y1="257.5" x2="421" y2="330" stroke="#ff2bd6" stroke-width="2" opacity=".75"/><text x="430" y="354" fill="#ff2bd6" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Snare</text><text x="430" y="380" fill="#ff2bd6" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Drum</text><line x1="536" y1="185" x2="536" y2="240" stroke="#b78cff" stroke-width="3"/><ellipse cx="545" cy="185" rx="10" ry="7.5" fill="#b78cff" transform="rotate(-20 545 185)"/><line x1="536" y1="245" x2="536" y2="330" stroke="#b78cff" stroke-width="2" opacity=".75"/><text x="545" y="354" fill="#b78cff" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Middle</text><text x="545" y="380" fill="#b78cff" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="600" font-size="25">Tom</text></svg>`},
+{t:"Put it into practice",b:`<h3>Identify the beat by ear</h3><p>Listen for the bass and snare and you can hear which beat a song uses. Try these:</p><ul><li>Billie Jean (Michael Jackson)</li><li>Highway To Hell (AC/DC)</li><li>Another One Bites The Dust (Queen)</li><li>Try (Pink)</li></ul><p>Which one has the hi-hat on every beat? Which one doubles it?</p><h3>Beat challenge</h3><p>Play the beats from Step 4 and Step 5 over and over. Work through the challenges in order and tick each one off when you can do it without a slip.</p><div class="checks"><label><input type="checkbox" data-c="c1"> Challenge 1: Play the step 4 beat 4 times in a row</label><label><input type="checkbox" data-c="c2"> Challenge 2: Play the step 5 beat 4 times in a row</label><label><input type="checkbox" data-c="c3"> Challenge 3: Play for one minute without a mistake</label><label><input type="checkbox" data-c="c4"> Challenge 4: Play at different tempos, for example 60, 80 and 100 bpm</label></div><h3>What next?</h3><p>Once the beat feels easy, keep growing:</p><ul><li>Practise with a <b>metronome</b> and raise the speed a little at a time.</li><li><b>Play along</b> with songs you know.</li><li>Add <b>fills</b> at the end of a bar (Step 8).</li></ul>`}
+];
+const LAB={4:["1","2","3","4"],8:["1","&","2","&","3","&","4","&"],16:["1","e","&","a","2","e","&","a","3","e","&","a","4","e","&","a"]},M={4:4,8:2,16:1};
+let mode="r";try{mode=localStorage.getItem("pp-mode")||"r"}catch(e){}
+const HWS={r:{hh:["right hand","R.H."],sn:["left hand","L.H."],bd:["right foot","R.F."]},l:{hh:["left hand","L.H."],sn:["right hand","R.H."],bd:["left foot","L.F."]},o:{hh:["left hand","L.H."],sn:["right hand","R.H."],bd:["right foot","R.F."]}},MN={r:"right-handed",l:"left-handed",o:"open-handed"};
+function hands(){const h=HWS[mode]||HWS.r;document.querySelectorAll(".hw").forEach(e=>{const t=h[e.dataset.h];if(t)e.textContent=t[0]});document.querySelectorAll(".tag").forEach(e=>{const t=h[e.dataset.h];if(t)e.textContent=t[1]});document.getElementById("badge").textContent=(STY.find(x=>x[0]==mode)||STY[0])[1];if(stickRow){const lead=mode=="r"?"R.H.":"L.H.",oth=mode=="r"?"L.H.":"R.H.";document.querySelectorAll('.tag[data-h="sn"]').forEach(e=>e.textContent=lead);document.querySelectorAll('.tag[data-h="hh"]').forEach(e=>e.textContent=lead+" + "+oth)}}
+let ro=false,lockBefore=null,customCols=null,customLabels=null,stickRow=null,stickMap=null,cur=0,pat={},res=8,bpm=70,playing=false,pos=0,tm,view="grid",cd=null;
+const SAMPLE_FILES={bd:"audio/bd.wav",sn:"audio/sn.wav",hh:"audio/hh.wav",tm1:"audio/tm1.wav",tm2:"audio/tm2.wav",tm3:"audio/tm3.wav",cr:"audio/cr.wav"};
+const BUF={},GAIN={};
+function loadSamples(){Object.keys(SAMPLE_FILES).forEach(k=>{fetch(SAMPLE_FILES[k]).then(r=>r.arrayBuffer()).then(buf=>new Promise((res,rej)=>{const p=ac.decodeAudioData(buf,res,rej);if(p&&p.catch)p.catch(rej)})).then(b=>{BUF[k]=b}).catch(()=>{})})}
+let ac;const A=()=>{if(!ac){ac=new(window.AudioContext||window.webkitAudioContext)();loadSamples()}return ac};
+document.addEventListener("pointerdown",()=>{try{A()}catch(e){}},{once:true});
+function noise(d){const a=A(),b=a.createBuffer(1,a.sampleRate*d,a.sampleRate),c=b.getChannelData(0);for(let i=0;i<c.length;i++)c[i]=Math.random()*2-1;const s=a.createBufferSource();s.buffer=b;return s}
+function thump(a,g,t,f0,f1,d){const o=a.createOscillator();o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+.12);o.connect(g);o.start(t);o.stop(t+d)}
+function sound(k,m=1){const a=A();if(BUF[k]){const src=a.createBufferSource(),gn=a.createGain();src.buffer=BUF[k];gn.gain.value=GAIN[k]||1;src.connect(gn);gn.connect(a.destination);src.start();return}
+const t=a.currentTime,g=a.createGain();g.connect(a.destination);
+if(k=="bd"){g.gain.setValueAtTime(1,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);thump(a,g,t,150,40,.3)}
+else if(k.startsWith("tm")){const F={tm1:[310,150],tm2:[230,105],tm3:[150,65]}[k]||[220,90],d=k=="tm3"?.42:.32;g.gain.setValueAtTime(.85,t);g.gain.exponentialRampToValueAtTime(.001,t+d);thump(a,g,t,F[0]*m,F[1]*m,d)}
+else{const n=noise(k=="cr"?1:.25),f=a.createBiquadFilter();f.type="highpass";f.frequency.value=k=="hh"?7000:k=="cr"?5000:1500;n.connect(f);f.connect(g);
+g.gain.setValueAtTime(k=="hh"?.3:k=="cr"?.4:.7,t);g.gain.exponentialRampToValueAtTime(.001,t+(k=="hh"?.05:k=="cr"?.9:.18));n.start(t);n.stop(t+(k=="cr"?1:.25));
+if(k=="sn"){const g2=a.createGain();g2.connect(a.destination);g2.gain.setValueAtTime(.4,t);g2.gain.exponentialRampToValueAtTime(.001,t+.12);thump(a,g2,t,190,120,.12)}}}
+function load(p){const keys=(p&&p.rows)||["hh","sn","bd"];ROWS=keys.map(k=>[k,NAMES[k]]);pat={};ROWS.forEach(r=>pat[r[0]]=Array(16).fill(0));if(p){keys.forEach(k=>(p[k]||[]).forEach(i=>pat[k][i]=1));res=p.res;bpm=p.bpm}
+lockBefore=p&&p.lockBefore!=null?p.lockBefore:null;
+customCols=p&&p.cols?p.cols:null;customLabels=p&&p.colLabels?p.colLabels:null;
+stickRow=p&&p.stick?p.stick:null;stickMap=null;
+if(stickRow){stickMap={};stickMap[stickRow]={};stickMap.sn={};const lead=mode=="r"?"R":"L",oth=lead=="R"?"L":"R";(p[stickRow]||[]).forEach(idx=>{stickMap[stickRow][idx]=idx%2==0?lead:oth});(p.sn||[]).forEach(idx=>{stickMap.sn[idx]=lead})}
+ro=!!(p&&p.ro);if(view=="kit")$("kitv").innerHTML=kitHTML();$("r8").hidden=$("r16").hidden=ro||!!customCols;$("hint").textContent=ro?"Press Play and watch each part light up as the beat is played.":lockBefore!=null?"Beats 1 to 3 are locked. Edit the tiles under beat 4 (4, e, &, a) to write your own fill.":"Tap a tile to switch a beat on or off. Each row is one part of the kit.";$("bpm").value=bpm;$("bv").textContent=bpm;setRes(res)}
+const $=id=>document.getElementById(id);
+function setRes(r){res=r;$("r8").classList.toggle("on",r==8);$("r16").classList.toggle("on",r==16);grid()}
+function focusEdit(){const sc=$("gscroll");if(!sc||sc.clientWidth===0)return;if(lockBefore==null){sc.scrollLeft=0;return}const b=sc.querySelector(".cells button:not(.locked)");if(b)sc.scrollLeft+=b.getBoundingClientRect().left-sc.getBoundingClientRect().left-72}
+function checkSwipe(){const sc=$("gscroll"),n=$("swipe");n.hidden=!(sc.clientWidth>0&&sc.scrollWidth>sc.clientWidth+1)}
+addEventListener("resize",checkSwipe);
+function grid(){const g=$("grid");g.innerHTML="";
+const cols=customCols?customCols.map((i,idx)=>({i,label:customLabels[idx],beat:i%4==0})):Array.from({length:res},(_,s)=>({i:s*M[res],label:LAB[res][s],beat:res>4&&s%(res/4)==0}));
+g.style.setProperty("--gw",(90+cols.length*48)+"px");
+ROWS.forEach(([k,n])=>{const row=document.createElement("div");row.className="row";
+row.innerHTML=`<span style="color:${COL[k]}">${n}<small class="tag" data-h="${k}"></small></span>`;const c=document.createElement("div");c.className="cells";c.style.gridTemplateColumns=`repeat(${cols.length},minmax(0,1fr))`;
+cols.forEach(({i,label,beat})=>{const b=document.createElement("button");const stk=(stickMap&&stickMap[k]&&stickMap[k][i]);
+b.innerHTML=stk?`<span class="stk">${stk}</span><span class="cnt2">${label}</span>`:label;if(stk)b.classList.add("stick");
+b.style.setProperty("--c",COL[k]);b.dataset.i=i;
+const dim=lockBefore!=null&&i<lockBefore,uneditable=ro||dim;
+b.className=(pat[k][i]?"on ":"")+(dim?"locked ":"")+(beat?"g4":"")+(stk?" has-stick":"");
+b.setAttribute("aria-label",stk?`${n}, step ${label}, ${stk=="R"?"right hand":"left hand"}`:`${n}, step ${label}`);
+if(uneditable){b.tabIndex=-1}else b.onclick=()=>{pat[k][i]^=1;b.classList.toggle("on",!!pat[k][i]);if(pat[k][i])sound(k)};c.appendChild(b)});
+row.appendChild(c);g.appendChild(row)});hands();checkSwipe();focusEdit()}
+function tick(){const i=pos*M[res];document.querySelectorAll(".cells button").forEach(b=>b.classList.toggle("now",+b.dataset.i==i));
+ROWS.forEach(([k])=>{if(pat[k][i]){sound(k);flash(k)}});pos=(pos+1)%res}
+function flash(k){const l=LAB[res][pos],col=COL[k]||"#fff";document.querySelectorAll(`#kitv [data-k="${k}"]`).forEach(e=>{e.style.fill=col;setTimeout(()=>{e.style.fill=""},170)});document.querySelectorAll(`#kitv .cnt[data-c="${k}"]`).forEach(e=>{e.textContent=l;e.classList.add("hit");setTimeout(()=>e.classList.remove("hit"),170)})}
+function play(){A().resume();playing=true;pos=0;$("go").textContent="Stop";const ms=60000/bpm/(res==16?4:res==8?2:1);tick();tm=setInterval(tick,ms)}
+function stop(){playing=false;clearInterval(tm);$("go").textContent="Play";document.querySelectorAll(".cells button.now").forEach(b=>b.classList.remove("now"))}
+function restart(){if(playing){stop();play()}}
+$("go").onclick=()=>playing?stop():play();
+$("bpm").oninput=e=>{bpm=+e.target.value;$("bv").textContent=bpm;restart()};
+$("r8").onclick=()=>{setRes(8);restart()};$("r16").onclick=()=>{setRes(16);restart()};
+function setView(v){view=v;$("gridv").hidden=v!="grid";$("kitv").hidden=v!="kit";$("vg").classList.toggle("on",v=="grid");$("vk").classList.toggle("on",v=="kit");if(v=="kit")$("kitv").innerHTML=kitHTML();checkSwipe()}
+$("vg").onclick=()=>setView("grid");$("vk").onclick=()=>setView("kit");
+function startClock(){clearInterval(cd);let n=30;const c=$("clock");c.hidden=false;c.textContent=n;cd=setInterval(()=>{n--;c.textContent=n;if(n<=0){clearInterval(cd);c.textContent="Done!"}},1000)}
+function quiz(){const names={hh:"Hi-hat",sn:"Snare",bd:"Bass drum",tm1:"Small tom",tm2:"Middle tom",tm3:"Floor tom",cr:"Cymbal"},keys=Object.keys(names);
+const el=$("quiz");let score=0,n=0;const ask=()=>{const k=keys[Math.floor(Math.random()*keys.length)];
+el.innerHTML=kit();el.querySelectorAll(`.p[data-k="${k}"]`).forEach(e=>e.classList.add("q"));
+const o=document.createElement("div");o.className="opts";keys.forEach(x=>{const b=document.createElement("button");b.className="ghost";b.textContent=names[x];
+b.onclick=()=>{n++;sound(k);if(x==k){score++;b.classList.add("good")}else b.classList.add("bad");o.querySelectorAll("button").forEach(z=>z.disabled=true);
+const nx=document.createElement("button");nx.className="cta";nx.textContent="Next part";nx.onclick=ask;o.appendChild(nx);
+const sc=document.createElement("p");sc.textContent=(x==k?"Correct. ":"It was the "+names[k].toLowerCase()+". ")+"Score: "+score+" of "+n;el.appendChild(sc)};o.appendChild(b)});el.appendChild(o)};ask()}
+function home(){stop();clearInterval(cd);document.body.classList.add("home");window.scrollTo(0,0)}
+function show(i){document.body.classList.remove("home");stop();clearInterval(cd);cur=i;const s=S[i];
+document.querySelectorAll("#nav button").forEach((b,j)=>b.classList.toggle("on",j==i));placeMarker();
+$("step").innerHTML=`<h2><span class="stepno">Step ${i+1}:</span> ${s.t.replace(" - ","<br>")}</h2>${(()=>{const v=s.v?s.v():"";if(!v)return s.b;if(!s.vfirst)return s.b+v;const k=s.b.indexOf("</p>")+4;return s.b.slice(0,k)+v+s.b.slice(k)})()}
+${s.p?`<p><button class="cta" id="lp">Let's play</button> ${s.timer?`<button class="ghost" id="t30">Start 30 seconds</button>`:""}</p>`:""}`;
+$("pager").innerHTML=`<button class="ghost" id="pv" ${i==0?"disabled":""}>Back</button><button class="ghost" id="nx" ${i==S.length-1?"disabled":""}>Next step</button>`;
+document.querySelectorAll("#step input[data-c]").forEach(x=>{try{x.checked=localStorage.getItem("pp-"+x.dataset.c)=="1"}catch(e){}x.onchange=()=>{try{localStorage.setItem("pp-"+x.dataset.c,x.checked?"1":"0")}catch(e){}if(x.checked)lick()}});hands();$("pv").onclick=()=>show(i-1);$("nx").onclick=()=>show(i+1);$("clock").hidden=true;
+if(s.q)quiz();if(s.sty)renderStyle();
+if(s.p){$("lp").onclick=()=>{$("player").hidden=false;load(s.p);focusEdit();$("player").scrollIntoView({behavior:"smooth"})};if(s.timer)$("t30").onclick=()=>{$("player").hidden=false;if(!playing){load(s.p);play()}startClock()};load(s.p)}
+else $("player").hidden=true}
+const LOGO="logo.svg";
+function placeMarker(){const nav=$("nav"),b=nav.querySelectorAll("button")[cur],m=$("mk");if(!b||!m)return;m.style.left=(b.offsetLeft-6)+"px";$("mnum").textContent=cur+1;$("mnum").style.fontSize=cur>=9?"12px":"17px";nav.scrollTo({left:Math.max(0,b.offsetLeft-(nav.clientWidth-b.offsetWidth)/2),behavior:"smooth"})}
+addEventListener("resize",()=>placeMarker());
+S.forEach((s,i)=>{const b=document.createElement("button");b.innerHTML='<svg viewBox="0 0 48 48" aria-hidden="true"><path class="o" d="M13 9 L40 24 L13 39 Z"/><path class="t" d="M13 9 L40 24 L13 39 Z"/></svg><span class="n">'+(i+1)+'</span>';b.setAttribute("aria-label","Step "+(i+1)+": "+s.t);if(s.p)b.className="beat";b.onclick=()=>show(i);$("nav").appendChild(b)});
+const mk=document.createElement("div");mk.id="mk";mk.setAttribute("role","button");mk.setAttribute("aria-label","Power Play. Tap to go back to the title page.");mk.innerHTML='<img src="'+LOGO+'" alt=""><span id="mnum"></span>';mk.onclick=home;$("nav").appendChild(mk);
+$("kitv").addEventListener("pointerdown",e=>{const t=e.target.closest("[data-t],[data-k]");if(!t)return;e.preventDefault();const k=t.dataset.t||t.dataset.k;A().resume();sound(k);tapFlash(k)});
+$("start").onclick=()=>show(0);
+load(null);show(0);home();
+</script></body></html>
